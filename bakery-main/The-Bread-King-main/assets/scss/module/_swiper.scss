@@ -1,0 +1,62 @@
+@use '../base/breakpoints' as media;
+
+.buttons-container {
+    margin: 2rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: max-content;
+}
+
+@include media.laptops {
+    .buttons-container {
+        display: none;
+    }
+}
+
+.btn-carrousel {
+    border: 1px solid #ECEBEA;
+    padding: .5rem .7rem;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    background-color: transparent;
+}
+
+.swiper-pagination,
+.swiper-pagination-about,
+.swiper-pagination-products {
+    position: static !important;
+    color: #000;
+    width: auto;
+    font-size: 1.4rem;
+}
+
+.products {
+    .swiper-slide {
+        width: 16rem;
+
+        @include media.smallTablets {
+            width: 18rem;
+        }
+    }
+
+    &__images-mobile {
+        display: block;
+
+        @include media.laptops {
+            display: none !important;
+        }
+    }
+
+    &__images-desktop {
+        display: none;
+        overflow: hidden;
+
+        @include media.laptops {
+            display: flex;
+            justify-content: center;
+            gap: 6rem;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+// Styles Base
+@use './base/reset';
+
+
+// Styles Layout
+@use './layout/home';
+@use './layout/about';
+@use './layout/products';
+@use './layout/contact';
+@use './layout/qualities';
+@use './layout/footer';
+
+
+// Styles Module
+@use './module/swiper';
+@use './module/carte';

@@ -1,0 +1,111 @@
+@use '../base/colors' as color;
+@use '../base/breakpoints' as media;
+@use '../module/mixins' as mixin;
+
+.about {
+    margin-top: 8rem;
+    padding: 0 2rem 2.5rem;
+    text-align: center;
+    border-bottom: 1px solid #ECEBEA;
+
+    @include media.desktops {
+        padding: 0;
+    }
+
+    &__container-texts {
+        max-width: 78rem;
+        margin: 0 auto;
+
+        @include media.smallTablets {
+            max-width: 90rem
+        }
+    }
+
+    &__title {
+        @include mixin.style-main-titles;
+    }
+
+    &__text {
+        @include mixin.style-main-texts;
+    }
+
+    &__carrousel-container {
+        margin-top: 4.5rem;
+        height: 40rem;
+
+        @include media.smallTablets {
+            padding-bottom: 8rem;
+            height: max-content;
+        }
+    }
+
+    .swiper-slide {
+        position: relative;
+
+        img {
+            border-radius: 1.5rem;
+            object-fit: cover;
+            height: 33rem;
+
+            @include media.smallTablets {
+                height: 40rem;
+            }
+        }
+    }
+
+    .carrousel__texts-container {
+        background-color: rgba(0, 0, 0, 0.411);
+        position: absolute;
+        z-index: 999;
+        bottom: .4rem;
+        width: 100%;
+        left: 0;
+        border-radius: 0 0 1rem 1rem;
+        color: color.$white-primary;
+        padding: 0 2rem;
+
+        h2 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-top: 2rem;
+
+            @include media.smallTablets {
+                font-size: 2.3rem;
+            }
+        }
+
+        p {
+            margin-top: .5rem;
+            font-size: 1.3rem;
+        }
+
+        button,
+        a {
+            display: block;
+            border-radius: .5rem;
+            width: 90%;
+            padding: 1rem;
+            margin: 2rem auto;
+            background-color: color.$orange-primary;
+            color: color.$white-primary;
+            font-weight: 500;
+            transition: all .3s;
+            font-size: 1.6rem;
+
+            &:hover {
+                background-color: #bf5911;
+            }
+
+            i {
+                margin-left: 1rem;
+                font-size: 1.8rem;
+
+                @include media.extraSmallDevices {
+                    font-size: 2.2rem;
+                }
+            }
+
+            
+        }
+    }
+}

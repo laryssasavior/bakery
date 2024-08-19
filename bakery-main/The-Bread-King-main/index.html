@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/image/favicon.ico" type="image/x-icon">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="assets/css/app.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>The Bread King | Sua Jornada pelo Sabor Autêntico</title>
+</head>
+<body>
+    <main class="limit-content">
+        <section class="home">
+            <div class="home__container-image">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="assets/image/BannerMobile.svg">
+                    <source media="(min-width: 768px)" srcset="assets/image/Banner.svg">
+                    <img src="assets/image/BannerMobile.svg" alt="Banner Company">
+                </picture>
+            </div>
+
+            <div class="home__btn-arrow">
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about__container-texts">
+                <h1 class="about__title">Seja bem-vindo á uma <span>experiência irresistível</span></h1>
+                <p class="about__text">
+                    Descubra a essência da nossa padaria, onde cada produto é cuidadosamente preparado para proporcionar
+                    momentos únicos. Nosso compromisso com a qualidade e paixão pela arte da panificação nos tornam a
+                    escolha perfeita para os amantes de sabores autênticos.
+                </p>
+            </div>
+
+            <div class="about__carrousel-container">
+                <div class="swiper mySwiper" id="swiper-one">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/image/IMG02.svg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/image/IMG01.svg" alt="">
+                            <div class="carrousel__texts-container">
+                                <h2>Faça sua encomenda</h2>
+                                <p>Venha se deliciar com os nosso incríveis produtos.</p>
+
+                                <a href="https://api.whatsapp.com/send/?phone=5511913472137&text&type=phone_number&app_absent=0"
+                                    target="_blank">
+                                    Fazer encomenda
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/image/IMG03.svg" alt="">
+
+                            <div class="carrousel__texts-container">
+                                <h2>Acesse o nosso cardápio</h2>
+                                <p>Conheça o nosso cardápio</p>
+
+                                <button id="btn-show-carte">
+                                    <span>Ver Cardápio</span>
+                                    <i class="fa-solid fa-book-open"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons-container buttons-container-about">
+                    <button class="btn-carrousel btn-carrousel-about-left">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+
+                    <div class="swiper-pagination swiper-pagination-about"></div>
+
+                    <button class="btn-carrousel btn-carrousel-about-right">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="products__image-container">
+                <img src="assets/image/Banner02.svg" alt="" class="products__image">
+            </div>
+
+            <div class="products__texts">
+                <h2 class="products__title">Conheça nossos <span>produtos</span></h2>
+
+                <p class="products__text">
+                    Descubra a variedade irresistível de nossos produtos artesanais. Da delicadeza dos nossos doces às
+                    crocantes opções de pães, temos algo especial para cada paladar. Delicie-se com a autenticidade e
+                    nossos sabores únicos.
+                </p>
+                <p class="products__text">
+                    Na The Bread King, cada item é cuidadosamente preparado para oferecer uma experiência única. Nossos
+                    pães são assados diariamente, utilizando ingredientes frescos e de alta qualidade. Além disso,
+                    nossos bolos e doces são feitos com dedicação, resultando em sobremesas que encantam os sentidos.
+                </p>
+                <p class="products__text">
+                    Visite-nos e descubra por que somos conhecidos por proporcionar momentos de puro prazer
+                    gastronômico.
+                </p>
+            </div>
+
+            <div class="products__carrosel-container">
+                <div class="swiper mySwiper products__images-mobile" id="swiper-two">
+                    <div class="swiper-wrapper images-products-mobile">
+                        <div class="swiper-slide">
+                            <img src="assets/image/Product01.svg" alt="product 1">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/image/Product02.svg" alt="product 2">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/image/Product03.svg" alt="product 3">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/image/Product04.svg" alt="product 4">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/image/Product05.svg" alt="product 5">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/image/Product06.svg" alt="product 6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products__images-desktop">
+                    <div class="swiper-slide">
+                        <img src="assets/image/Product01.svg" alt="product 1">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="assets/image/Product02.svg" alt="product 2">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="assets/image/Product03.svg" alt="product 3">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="assets/image/Product04.svg" alt="product 4">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="assets/image/Product05.svg" alt="product 5">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="assets/image/Product06.svg" alt="product 6">
+                    </div>
+                </div>
+
+                <div class="buttons-container">
+                    <button class="btn-carrousel btn-carrousel-products-left">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+
+                    <div class="swiper-pagination swiper-pagination-products"></div>
+
+                    <button class="btn-carrousel btn-carrousel-products-right">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact__texts">
+                <h2 class="contact__title">Localização e Contato</h2>
+                <h3 class="contact__subtitle">The Bread King</h3>
+            </div>
+
+            <div class="contact__informations-container">
+                <div class="contact__information">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <address>Rua das Acácias, 394 - Jardim das Indústrias, SJC - SP</address>
+                </div>
+
+                <div class="contact__information">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>+55 (12) 99999-9999</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="qualities">
+            <div class="qualities__informations">
+                <h2 class="qualities__title">Por que escolher a <span>The Bread King?</span></h2>
+
+                <div class="qualities__qualities-container">
+                    <div class="qualities__qualitie">
+                        <div class="qualities__icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="qualities__texts">
+                            <h3>Ambiente Aconchegante</h3>
+                            <p>
+                                Projetado para oferecer aos clientes um ambiente aconchegante e convidativo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="qualities__qualitie">
+                        <div class="qualities__icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="qualities__texts">
+                            <h3>Produtos Frescos</h3>
+                            <p>
+                                Oferecemos uma variedade de produtos frescos e feitos com ingredientes de qualidade.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="qualities__qualitie">
+                        <div class="qualities__icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="qualities__texts">
+                            <h3>Atendimento Personalizado
+                            </h3>
+                            <p>
+                                Nosso atendimento é personalizado, buscando atender às preferências de cada cliente.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="qualities__qualitie">
+                        <div class="qualities__icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="qualities__texts">
+                            <h3>Feedback Constante</h3>
+                            <p>
+                                Estamos sempre abertos ao feedback dos clientes para aprimorar nossos serviços.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="qualities__qualitie">
+                        <div class="qualities__icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="qualities__texts">
+                            <h3>Tradição e Dedicação</h3>
+                            <p>
+                                Cada produto é feito com cuidado e dedicação para proporcionar uma experiência única.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qualities__container-image">
+                <img src="assets/image/Banner03.svg" alt="Banner Logo" class="qualities__image">
+            </div>
+        </section>
+
+        <div class="carte-overlay">
+            <div class="carte-container">
+                <div class="carte__header">
+                    <h2 class="carte__title">Nosso cardápio</h2>
+                    <i class="fa-solid fa-xmark" id="btn-close-carte"></i>
+                </div>
+
+                <div class="carte__container-itens">
+                    <div class="carte__item">
+                        <h3>Pão Artesanal</h3>
+                        <p>Pão fresco e crocante</p>
+                        <p>R$ 5,99</p>
+                    </div>
+
+                    <div class="carte__item">
+                        <h3>Bolo de Chocolate</h3>
+                        <p>Delicioso bolo de chocolate</p>
+                        <p>R$ 12,99</p>
+                    </div>
+
+                    <div class="carte__item">
+                        <h3>Croissant</h3>
+                        <p>Croissant folhado e macio</p>
+                        <p>R$ 3,49</p>
+                    </div>
+
+                    <div class="carte__item">
+                        <h3>Baguete Integral</h3>
+                        <p>Baguete integral com grãos</p>
+                        <p>R$ 7,99</p>
+                    </div>
+
+                    <div class="carte__item">
+                        <h3>Torta de Frutas</h3>
+                        <p>Torta recheada com frutas frescas</p>
+                        <p>R$ 15,99</p>
+                    </div>
+
+                    <div class="carte__item">
+                        <h3>Pão de Queijo</h3>
+                        <p>Tradicional pão de queijo mineiro</p>
+                        <p>R$ 4,99</p>
+                    </div>
+
+                    <div class="carte__item">
+                        <h3>Cookies de Aveia</h3>
+                        <p>Cookies de aveia com pedaços de chocolate</p>
+                        <p>R$ 6,99</p>
+                    </div>
+
+                    <div class="carte__item">
+                        <h3>Bolo de Morango</h3>
+                        <p>Bolo recheado com morangos frescos</p>
+                        <p>R$ 14,99</p>
+                    </div>
+
+                    <div class="carte__item">
+                        <h3>Sanduíche de Frangoo</h3>
+                        <p>Sanduíche de frango grelhado</p>
+                        <p>R$ 8,99</p>
+                    </div>
+
+                    <div class="carte__item">
+                        <h3>Brownie de Nozes</h3>
+                        <p>Brownie com nozes e chocolate</p>
+                        <p>R$ 9,99</p>
+                    </div>
+
+                    <div class="carte__item">
+                        <h3>Torta de Limão</h3>
+                        <p>Torta cremosa de limão</p>
+                        <p>R$ 13,99</p>
+                    </div>
+
+                    <div class="carte__item">
+                        <h3>Empada de Palmito</h3>
+                        <p>Empada recheada com palmito</p>
+                        <p>R$ 5,49</p>
+                    </div>
+
+                    <div class="carte__item">
+                        <h3>Rosquinhas de Canela</h3>
+                        <p>Rosquinhas fofas com canela</p>
+                        <p>R$ 3,99</p>
+                    </div>
+
+                    <div class="carte__item">
+                        <h3>Torta de Maçã</h3>
+                        <p>Torta clássica de maçã</p>
+                        <p>R$ 11,99</p>
+                    </div>
+
+                    <div class="carte__item">
+                        <h3>Coxinha de Frango</h3>
+                        <p>Coxinha recheada com frango desfiado</p>
+                        <p>R$ 4,79</p>
+                    </div>
+
+                    <div class="carte__item">
+                        <h3>Bolo de Cenoura</h3>
+                        <p>Bolo fofinho com cobertura de chocolate</p>
+                        <p>R$ 13,49</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer limit-content">
+        <img src="assets/image/LogoText.svg" alt="" class="footer__image">
+        <p class="footer__copyright">
+            © 2024 The Bread King - Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@use '../base/breakpoints' as media;
+@use '../base/colors' as color;
+@use '../module/mixins' as mixin;
+
+.products {
+    margin-top: 6rem;
+    text-align: center;
+
+    @include media.smallTablets {
+        margin-top: 8rem;
+    }
+
+    @include media.desktops {
+        .products__image {
+            border-radius: 1.5rem;
+        }
+    }
+
+    &__texts {
+        max-width: 100rem;
+        margin: 4rem auto 0;
+        padding: 0 2rem;
+    }
+
+    &__title {
+        @include mixin.style-main-titles;
+    }
+
+    &__text {
+        @include mixin.style-main-texts;
+
+        &:nth-child(4) {
+            font-weight: 500;
+        }
+    }
+
+    &__carrosel-container {
+        margin-top: 5rem;
+    }
+}
